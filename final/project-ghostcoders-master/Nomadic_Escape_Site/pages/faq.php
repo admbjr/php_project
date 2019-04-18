@@ -15,12 +15,9 @@
         </div>
     </header>
     <div>
-        <?php 
-            
-            //require_once '';
-        ?>
+
     </div>
-    <div class="container" style="padding-top:40px;padding-bottom:40px;">
+   <!-- <div class="container" style="padding-top:40px;padding-bottom:40px;">
         <div class="container">
             <div class="panel-group" id="accordion">
                 <div class="faqHeader">General questions</div>
@@ -33,7 +30,7 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div>-->
     
     
 <?php

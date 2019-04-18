@@ -21,8 +21,8 @@ SET time_zone = "+00:00";
 --
 -- Database: `test_nomadic_escape`
 --
-CREATE DATABASE IF NOT EXISTS `test_nomadic_escape` DEFAULT CHARACTER SET utf8 COLLATE utf8_general_ci;
-USE `test_nomadic_escape`;
+CREATE DATABASE IF NOT EXISTS `test_nomadic_escape1` DEFAULT CHARACTER SET utf8 COLLATE utf8_general_ci;
+USE `test_nomadic_escape1`;
 
 -- --------------------------------------------------------
 

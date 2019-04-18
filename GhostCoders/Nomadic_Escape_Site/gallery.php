@@ -1,8 +1,9 @@
 <?php
-    require_once 'includes/header.php';
+    require_once("../includes/header.php");
+    require_once("../includes/navbar.php");
 ?>
 
-    <header class="masthead" style="background-image:url('assets/img/air-air-travel-aircraft-731217.jpg');">
+    <header class="masthead" style="background-image:url('../assets/img/air-air-travel-aircraft-731217.jpg');">
         <div class="overlay"></div>
         <div class="container">
             <div class="row">
@@ -14,12 +15,12 @@
         </div>
     </header>
     <div>
-        <?php // place your file path to your  'foldername/file.php' file
-           // require_once '';
+        <?php 
+           require_once("../gallery/allimage.php");
         ?>
     </div>
     
 
 <?php
-    require_once 'includes/footer.php';
+    require_once("../includes/footer.php");
 ?>

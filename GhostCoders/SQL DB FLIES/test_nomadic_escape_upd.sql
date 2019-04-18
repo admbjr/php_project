@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Apr 18, 2019 at 09:39 PM
+-- Generation Time: Apr 18, 2019 at 10:24 PM
 -- Server version: 10.1.37-MariaDB
 -- PHP Version: 7.3.0
 
@@ -21,6 +21,8 @@ SET time_zone = "+00:00";
 --
 -- Database: `test_nomadic_escape`
 --
+CREATE DATABASE IF NOT EXISTS `test_nomadic_escape` DEFAULT CHARACTER SET utf8 COLLATE utf8_general_ci;
+USE `test_nomadic_escape`;
 
 -- --------------------------------------------------------
 

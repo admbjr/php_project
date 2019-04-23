@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form action="" method="get">
+    <select id="author">
+
+    </select>
+</form>
+
+<div id="results">
+
+</div>
+<script
+        src="https://code.jquery.com/jquery-3.3.1.min.js"
+        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+
+<script>
+    $(document).ready(function (){
+        $.getJSON('getblog.php', function(data){
+         
+            var pro ="";
+            $.each(data, function(index, proobj){
+                pro += "<option value='" + proobj.author +  "'>" + proobj.author +  "</option>"
+            })
+            console.log(pro);
+
+            $('#author').html(pro);
+         
+        })
+
+        $('#author').change(function(){
+            selval = $('#author').val();
+         
+            $.getJSON('getBlogContent.php', { prog : selval}, function(blogs){
+                stus = '';
+                $.each(blogs, function (index, blog) {
+                    stus += "<li>" + blog.blogContent + " : " + blog.blogName + "</li>";
+                 })
+                $('#results').html(stus);
+            })
+        })
+
+
+    })
+</script>
+
+
+</body>
+</html>
